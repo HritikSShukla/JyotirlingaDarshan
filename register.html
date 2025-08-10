@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyotirling Darshan Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e293b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      
+    }
+
+    .formbox {
+      background-color: #ffffffc5;
+      padding: 30px 40px;
+      border-radius: 10px;
+      width: 400px;
+    }
+
+    .formbox h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #d84315;
+    }
+
+    .formbox label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .formbox input, 
+    .formbox select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formbox button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #d84315;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .formbox button:hover {
+      background-color: #bf360c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="formbox">
+    <h2>Jyotirling Darshan Registration</h2>
+    <form>
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}">
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="darshan">Choose Jyotirling</label>
+      <select id="darshan" name="darshan" required>
+        <option>Kedarnath</option>
+        <option>Somnath</option>
+        <option>Mahakaleshwar</option>
+        <option>Omkareshwar</option>
+        <option>Bhimashankar</option>
+        <option>Trimbakeshwar</option>
+        <option>Rameshwaram</option>
+        <option>Vaidyanath</option>
+        <option>Nageshwar</option>
+        <option>Grishneshwar</option>
+      </select>
+
+      <button type="submit" onclick="alert('Your Form Is Subited')">Submit Registration</button>
+    </form>
+    <button><a href="jyotirlingdarshan.html" style="text-decoration: none; color: #ccc; font-weight: 500;" class="back-btn">Back to Home</a></button>
+  </div>
+  
+</body>
+</html>
+
